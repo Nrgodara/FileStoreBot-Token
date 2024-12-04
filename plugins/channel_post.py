@@ -1,6 +1,6 @@
 #(©)Codexbotz
 
-import asyncio
+'''import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
@@ -48,4 +48,4 @@ async def new_post(client: Client, message: Message):
         await message.edit_reply_markup(reply_markup)
     except Exception as e:
         print(e)
-        pass
+        pass'''
