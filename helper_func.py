@@ -70,7 +70,7 @@ async def get_messages(client, message_ids):
 
 async def get_message_id(client, message):
     if message.forward_from_chat:
-        if message.forward_from_chat.id == client.db_channel.id:
+        if message.forward_from_chat.id == -1002406489881:
             return message.forward_from_message_id
         else:
             return 0
@@ -84,7 +84,7 @@ async def get_message_id(client, message):
         channel_id = matches.group(1)
         msg_id = int(matches.group(2))
         if channel_id.isdigit():
-            if f"-100{channel_id}" == str(client.db_channel.id):
+            if f"-100{channel_id}" == -1002406489881:
                 return msg_id
         else:
             if channel_id == client.db_channel.username:
